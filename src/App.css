@@ -1,38 +1,415 @@
-.App {
+/* 
+  App.css
+  1) Global Reset & Base
+  2) Animated Gradient Background
+  3) Glassmorphism Cards & Neon Glows
+  4) Typography & Utility
+  5) Responsive Queries
+*/
+
+/* ----------------------------------------
+   1) GLOBAL RESET & BASE
+---------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+/* 
+   Helps ensure body stretches beyond viewport 
+   if content is taller. 
+*/
+body {
+  overflow-x: hidden; 
+}
+
+/* ----------------------------------------
+   2) ANIMATED GRADIENT BACKGROUND
+---------------------------------------- */
+/*
+   Creates a multi-stop gradient that shifts over time.
+   The 'background-size: 600% 600%' is key for the animation 
+   to move across the gradient more dramatically.
+*/
+body {
+  background: linear-gradient(
+    120deg,
+    #1f3c88,
+    #5c6f82,
+    #0099ff,
+    #1f3c88
+  );
+  background-size: 600% 600%;
+  animation: gradientShift 20s ease infinite;
+}
+
+/* Keyframes for the gradient’s shifting animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ----------------------------------------
+   3) GLASSMORPHISM CARDS & NEON GLOWS
+---------------------------------------- */
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem 1rem;
+  position: relative;
+  z-index: 1; 
+}
+
+/* Glassy sections with a subtle neon border glow */
+.section {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  position: relative;
+  overflow: hidden; /* So neon outlines or glows don't stick out */
+}
+
+/* Hover effect: lifts, intensifies glow, slight scale */
+.section:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 
+   Apply the same style to header/footer if you want them 
+   to share the glass look with a glow.
+*/
+.header-container,
+.footer-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  margin: 2rem 0 1.5rem 0;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.header-container:hover,
+.footer-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Neon Edge Glow (optional fancy effect) 
+   Wrap card content in an extra container or use a pseudo-element 
+   to create a vibrant outline. Example: 
+*/
+.section::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: conic-gradient(
+    from 180deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.2)
+  );
+  animation: spinGlow 4s linear infinite;
+  filter: blur(50px);
+  opacity: 0.6;
+}
+@keyframes spinGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.section:hover::before {
+  opacity: 0.9;
+  filter: blur(40px);
+}
+
+/* Make sure the “glow” sits behind the card content */
+.section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ----------------------------------------
+   4) TYPOGRAPHY & UTILITY
+---------------------------------------- */
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #f2f2f2;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.header-container .name {
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+  color: #ffffff;
+  font-weight: 800;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.header-container .title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fafafa;
+  opacity: 0.85;
+}
+
+.footer-container p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+/* Paragraphs & Subtext */
+.summary-content p,
+.experience-list p,
+.projects-list p,
+.education-list p,
+.certifications-list p,
+.open-source-list p {
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+  color: #f8f8f8;
+  opacity: 0.9;
+}
+
+/* Subsection Titles */
+.experience-list h3,
+.projects-list h3,
+.education-list h3,
+.certifications-list h3,
+.open-source-list h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  margin: 0.5rem 0 0.5rem 1.5rem;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: #93c5fd; 
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:hover {
+  color: #cddbf9;
+  text-shadow: 0 0 5px #cddbf9;
+  text-decoration: underline;
+}
+
+/* Skill Tags (Neon-ish Hover) */
+.skill-tag {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  font-size: 0.9rem;
+  color: #ffffff;
+  cursor: default;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.skill-tag:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 0 8px #ffffff88;
+}
+
+/* ----------------------------------------
+   5) RESPONSIVE QUERIES
+---------------------------------------- */
+@media (min-width: 768px) {
+  .app-container {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container .name {
+    font-size: 1.8rem;
+  }
+  .header-container .title {
+    font-size: 1.1rem;
+  }
+  .section {
+    padding: 1.5rem;
+  }
+}
+
+/* App.css (additional snippet) */
+.navbar {
+  position: sticky; /* or fixed */
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #cddbf9;
+  text-shadow: 0 0 5px #cddbf9;
+}
+
+/* App.css addition */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.scroll-to-top:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.3);
+}
+
+/* For a minimal toggle button style */
+.toggle-btn {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+.toggle-btn:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Kill heavy transitions & animations for motion-sensitive users */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  body::before {
+    background-position: 0 0 !important;
+  }
+}
+
+.print-btn {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 1rem auto;
+  display: block;
+  cursor: pointer;
+  transition: background 0.3s ease;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.print-btn:hover {
+  background: rgba(255,255,255,0.4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Hide the nav, scroll button, toggles, etc. in print */
+@media print {
+  .navbar,
+  .scroll-to-top,
+  .print-btn,
+  .toggle-btn {
+    display: none !important;
+  }
+
+  .glass-card {
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #000 !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.skill-tag.highlighted {
+  background-color: #ffea54cc; /* bright highlight */
+  border-color: #ffea54aa;
+  color: #333;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+/* In App.css */
+.toggle-btn {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle-btn:hover {
+  background: rgba(255,255,255,0.4);
 }

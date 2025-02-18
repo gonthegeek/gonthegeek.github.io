@@ -1,0 +1,145 @@
+{
+  "personalInfo": {
+    "name": "Gonzalo Ronzón",
+    "title": "Information Technology and Intelligent Systems Engineer",
+    "email": "gonzaloronzon@proton.me",
+    "phone": "+52 2222394052",
+    "location": "CDMX, Mexico",
+    "linkedin": "https://www.linkedin.com/in/gonzalo-ronzon/",
+    "github": "https://github.com/gonthegeek",
+    "portfolio": "https://gonzaloronzon.com"
+  },
+
+  "summary": [
+    "Enthusiastic and adaptable Information Technology and Intelligent Systems Engineer with 5 years of experience in software engineering and project management, specializing in front-end development with React and back-end integration using Django.",
+    "Proficient in agile methodologies, network updates, and software development lifecycles, with a record of delivering efficient platforms and fostering collaborative environments. Highly committed and responsible, I thrive on continuous learning and pragmatic solutions.",
+    "Leveraging my skills as a Full Stack Engineer, I aspire to design, implement, and maintain cutting-edge web applications that help organizations achieve their goals. I succeed in dynamic environments where innovation and teamwork are key."
+  ],
+
+  "skills": [
+    "Adobe XD",
+    "Agile",
+    "Angular",
+    "Azure",
+    "CCNA",
+    "Django",
+    "ES6",
+    "Java",
+    "JavaScript",
+    "Kotlin",
+    "Matlab",
+    "MongoDB",
+    "NodeJS",
+    "Php",
+    "Power Platform",
+    "Python",
+    "Scrum",
+    "PostgreSQL",
+    "TypeScript",
+    "Visio",
+    "WebRTC",
+    "Websockets"
+  ],
+
+  "experience": [
+    {
+      "company": "NBCUniversal",
+      "role": "Engineer",
+      "duration": "01/2023 - Present",
+      "details": [
+        "Design and implement network updates, researching technological solutions and best practices (including real-time SRT stream monitoring).",
+        "Manage technical budgets and coordinate with vendors, creating a hub for controlling all IP devices for broadcast networks.",
+        "Develop infrastructure solutions, resolving operational issues and enhancing team collaboration.",
+        "Maintain strong internal/external relationships and produce comprehensive user manuals."
+      ]
+    },
+    {
+      "company": "KaminoTech",
+      "role": "Lead Software Engineer",
+      "duration": "01/2022 - 12/2022",
+      "details": [
+        "Led seamless React application integrations with extensive unit and integration testing.",
+        "Resolved software issues and developed intuitive user interfaces (UI) using Adobe XD.",
+        "Adopted agile practices and DevOps for Django-based backends, promoting effective cross-team collaboration."
+      ]
+    },
+    {
+      "company": "NBCUniversal",
+      "role": "Intern Engineer",
+      "duration": "08/2019 - 04/2021",
+      "details": [
+        "Created detailed and precise rack plans with Visio, translating documents from English to Spanish.",
+        "Maintained broadcast equipment for optimal performance and supported broadcast productions.",
+        "Advanced a data management app and built a Power BI dashboard to monitor team performance."
+      ]
+    },
+    {
+      "company": "Talent Universidad Panamericana",
+      "role": "Intern",
+      "duration": "01/2018 - 12/2023",
+      "details": [
+        "Maintained a webpage using Angular for optimal performance and user experience.",
+        "Produced multimedia products via Adobe Creative Suite for educational projects.",
+        "Showcased leadership in digital design for online courses and project management."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "No Dedicated Projects Listed",
+      "description": "The resume does not contain stand-alone projects beyond professional responsibilities.",
+      "url": null
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Universidad Panamericana",
+      "degree": "Specialization in Engineering and Project Management",
+      "duration": "01/2023 - 12/2023",
+      "details": "Focused on advanced methodologies for software engineering and team collaboration."
+    },
+    {
+      "institution": "Universidad Panamericana",
+      "degree": "Bachelor in Information Technologies and Intelligent Systems",
+      "duration": "01/2017 - 12/2022",
+      "details": "Concentrated on systems design, network architectures, and intelligent solutions."
+    }
+  ],
+
+  "certifications": [
+    {
+      "title": "Microsoft AZ-900",
+      "issuer": "Microsoft",
+      "date": "2024",
+      "credentialUrl": null
+    },
+    {
+      "title": "Javascript: test-driven development (ES6)",
+      "issuer": "Online Course/Platform",
+      "date": "2023",
+      "credentialUrl": null
+    },
+    {
+      "title": "CCNA: introduction to networks",
+      "issuer": "Cisco",
+      "date": "2021",
+      "credentialUrl": null
+    },
+    {
+      "title": "Dante certification level 2",
+      "issuer": "Audinate",
+      "date": "2020",
+      "credentialUrl": null
+    }
+  ],
+
+  "openSource": [
+    {
+      "name": "None Listed",
+      "description": "No open source contributions were mentioned in the resume.",
+      "url": null
+    }
+  ]
+}
