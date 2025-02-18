@@ -15,23 +15,9 @@ import "./App.css";
 
 function App() {
   const [resumeData, setResumeData] = useState(null);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // If using a local JSON file in src/data, you can import directly:
-    // import data from './data/resumeData.json';
     setResumeData(data);
-
-    // OR fetch if it's in public/data:
-/*     fetch("/data/resumeData.json")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP error ${res.status}`);
-        }
-        return res.json();
-      })
-      .then((data) => setResumeData(data))
-      .catch((err) => setError(err)); */
   }, []);
 
 /*   if (error) {

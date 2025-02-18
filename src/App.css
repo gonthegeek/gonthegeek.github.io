@@ -298,6 +298,7 @@ a:hover {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .navbar a {
