@@ -1,50 +1,47 @@
-import React, { useEffect, useState } from "react";
+// src/App.jsx
+import React from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 import NavBar from "./components/NavBar";
-import ScrollToTopButton from "./components/ScrollToTopButton";
-import PrintButton from "./components/PrintButton";
- import data from './data/resumeData.json';
-import Header from "./components/Header";
-import Summary from "./components/Summary";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Education from "./components/Education";
+import HeroSection from "./components/Hero";
+import SummarySection from "./components/Summary";
+import SkillsSection from "./components/Skills";
+import ExperienceSection from "./components/Experience";
+import ProjectsSection from "./components/Projects";
+import EducationSection from "./components/Education";
+import CertificationsSection from "./components/Certifications";
+import ContactSection from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
+import resumeData from "./data/resumeData.json"; // <-- import JSON
 import "./App.css";
 
 function App() {
-  const [resumeData, setResumeData] = useState(null);
-
-  useEffect(() => {
-    setResumeData(data);
-  }, []);
-
-/*   if (error) {
-    return <div>An error occurred while loading resume data: {error.message}</div>;
-  } */
-
-  if (!resumeData) {
-    return <div>Loading...</div>;
-  }
+  // Destructure the data for convenience
+  const {
+    personalInfo,
+    summary,
+    skills,
+    experience,
+    projects,
+    education,
+    certifications,
+  } = resumeData;
 
   return (
-    <div className="app-container">
-      <NavBar />
-      <Header personalInfo={resumeData.personalInfo} />
-
-      <main>
-        <Summary summary={resumeData.summary} />
-        <Skills skills={resumeData.skills} />
-        <Experience experience={resumeData.experience} />
-        <Projects projects={resumeData.projects} />
-        <Education education={resumeData.education} />
-      </main>
-
-      <PrintButton />
-      <Footer />
+    <ParallaxProvider>
+      <NavBar personalInfo={personalInfo} />
+      <HeroSection personalInfo={personalInfo} />
+      <SummarySection summary={summary} />
+      <SkillsSection skills={skills} />
+      <ExperienceSection experience={experience} />
+      <ProjectsSection projects={projects} />
+      <EducationSection education={education} />
+      <CertificationsSection certifications={certifications} />
+      <ContactSection contact={personalInfo} />
       <ScrollToTopButton />
-    </div>
+      <Footer />
+    </ParallaxProvider>
   );
 }
 

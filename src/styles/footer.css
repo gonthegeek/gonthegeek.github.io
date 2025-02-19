@@ -1,0 +1,12 @@
+/* ----------------------------------------
+   7) FOOTER
+---------------------------------------- */
+.footer-container {
+    text-align: center;
+    margin: 2rem auto 1rem auto;
+    padding: 1rem;
+    background: #f2f2f2;
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-size: 0.9rem;
+  }

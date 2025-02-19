@@ -1,0 +1,22 @@
+/* ----------------------------------------
+   4) COMMON SECTION STYLES
+---------------------------------------- */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff0055; /* accent color for headings */
+  }
+  .summary-section,
+  .skills-section,
+  .experience-section,
+  .projects-section,
+  .education-section,
+  .certifications-section,
+  .contact-section {
+    /* If you want a distinct style, add it here */
+  }
