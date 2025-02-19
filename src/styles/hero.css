@@ -9,12 +9,11 @@
     padding: 0;
     margin: 0;
     max-width: 100%;
-    /* No min-height: 100vh here, since we’re using calc in .hero-banner */
 }
 .hero-banner {
     position: relative;
     width: 100%;
-    height: calc(100vh - 70px); /* Adjust 70px to your actual navbar height */
+    height: 100vh; 
     overflow: hidden;
 }
 .hero-video {

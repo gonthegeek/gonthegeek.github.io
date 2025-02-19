@@ -2,50 +2,19 @@
    2) NAVBAR
 ---------------------------------------- */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* Internal margin => padding for brand & links */
-  padding: 1rem 2rem;
-  
-  background: #ffffffcc; /* Slight translucent white */
   backdrop-filter: blur(6px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* brand on left, links/toggle on right */
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  z-index: 1000;
 }
-/* Brand name / logo on the left */
-.nav-brand {
-  font-size: 1.4rem;
-  font-weight: 800;
-  margin-left: 1%;
-}
-/* Hamburger toggle (hidden on bigger screens) */
-.nav-toggle {
-  display: none;
+
+.toggle-night-mode {
+  padding: 0.5rem 1rem;
+  background-color: #6200ea;
+  color: #ffffff;
   border: none;
-  background: none;
-  font-size: 1.5rem;
+  border-radius: 5px;
   cursor: pointer;
-  margin-right: 1%;
 }
-/* Nav links in a row on large screens */
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  flex-wrap: nowrap;
-  margin-right: 1%;
-}
-.nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  transition: color 0.2s;
-}
-.nav-links li a:hover {
-  color: #ff0055;
+
+.toggle-night-mode:hover {
+  background-color: #3700b3;
 }

@@ -1,62 +1,29 @@
-/* ----------------------------------------
-     6) CONTACT & HEADER CONTAINER 
----------------------------------------- */
-.contact-section p {
-    margin-top: 1.5rem;
-    font-size: 1rem;
-    color: #555;
-}
-/* The header snippet for personal info, used inside Contact if desired */
-.header-container {
-    margin: 1rem 0;
-    text-align: center;
-}
-.header-container .name {
-    font-size: 1.8rem;
-    margin: 0.5rem 0;
-    font-weight: 800;
-}
-.header-container .title {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: #555;
-}
-.header-container a {
-    color: #ff0055;
-    text-decoration: none;
-}
-.header-container a:hover {
-    text-decoration: underline;
-}
-/* The 'Send Email' button in the contact section */
 .contact-button {
-    display: inline-block;
-    background: #ff0055;
-    color: #fff;
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-top: 1rem;
-    transition: background 0.3s;
+  transition: background 0.3s, transform 0.3s;
+  border: none;
+  cursor: pointer;
 }
+
 .contact-button:hover {
-    background: #e6004d;
+  transform: translateY(-2px);
 }
+
 .scroll-to-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background: #ff0055;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease, background 0.3s ease;
-    border: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #42879A;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+  border: none;
 }
+
 .scroll-to-top:hover {
-    transform: translateY(-3px);
-    background: #e6004d;
+  transform: translateY(-3px);
+  background: #e6004d;
 }
