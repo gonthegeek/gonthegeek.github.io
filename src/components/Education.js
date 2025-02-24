@@ -1,33 +1,54 @@
-// src/components/EducationSection.jsx
 import React from "react";
-import { motion } from "framer-motion";
+import {
+  Box,
+  Typography,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+} from "@mui/material";
 
-function EducationSection({ education }) {
+function EducationSection({ id,education }) {
   if (!education) return null;
 
   return (
-    <section id="education" className="education-section">
-      <motion.h2 initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-        Education
-      </motion.h2>
-
-      <div className="education-list">
-        {education.map((edu, i) => (
-          <motion.div
-            key={i}
-            className="education-card"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: i * 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h3>{edu.degree} - {edu.institution}</h3>
-            <p>{edu.duration}</p>
-            <p>{edu.details}</p>
-          </motion.div>
-        ))}
-      </div>
-    </section>
+    <Box id={id} sx={{ py: 8 }}>
+      <Container maxWidth="md">
+        <Typography variant="h3" gutterBottom textAlign="center">
+          Education
+        </Typography>
+        <Grid container spacing={4}>
+          {education.map((edu, index) => (
+            <Grid item xs={12} md={6} key={index}>
+              <Card
+                elevation={3}
+                sx={{
+                  height: "100%",
+                  transition: "0.3s",
+                  "&:hover": {
+                    transform: "translateY(-8px)",
+                    boxShadow: 8,
+                  },
+                }}
+              >
+                <CardContent>
+                  <Typography variant="h6" color="primary">
+                    {edu.degree}
+                  </Typography>
+                  <Typography variant="subtitle1">{edu.institution}</Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {edu.duration}
+                  </Typography>
+                  <Typography variant="body2" sx={{ mt: 2 }}>
+                    {edu.details}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
   );
 }
 

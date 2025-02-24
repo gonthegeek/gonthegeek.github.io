@@ -141,5 +141,28 @@
       "description": "No open source contributions were mentioned in the resume.",
       "url": null
     }
-  ]
+  ],
+  "about": {
+    "description": "I'm a passionate Information Technology and Intelligent Systems Engineer based in CDMX, Mexico. Beyond the code and technical specifications, I'm an innovative thinker who thrives on solving complex problems and creating efficient solutions.",
+    "approach": "I believe in the power of continuous learning and staying ahead of technological trends. My adaptable nature and strong communication skills allow me to work effectively in diverse teams and bridge the gap between technical and non-technical stakeholders.",
+    "interests": "When I'm not coding or exploring new technologies, I enjoy contributing to the tech community, mentoring aspiring developers, and staying active through sports and outdoor activities. I'm also passionate about sustainable technology and its impact on our future.",
+    "traits": [
+      {
+        "title": "Innovative Thinker",
+        "description": "Always seeking creative solutions to complex challenges"
+      },
+      {
+        "title": "Adaptable",
+        "description": "Quick to learn and embrace new technologies and methodologies"
+      },
+      {
+        "title": "Team Player",
+        "description": "Strong communicator who values collaboration and knowledge sharing"
+      },
+      {
+        "title": "Detail-Oriented",
+        "description": "Committed to delivering high-quality, well-documented code"
+      }
+    ]
+  }
 }

@@ -1,31 +1,38 @@
 // src/components/SkillsSection.jsx
 import React from "react";
-import { motion } from "framer-motion";
+import { Typography, Container, Box, Grid, Paper } from "@mui/material";
 
-function SkillsSection({ skills }) {
+function SkillsSection({ id, skills }) {
   if (!skills) return null;
 
   return (
-    <section id="skills" className="skills-section">
-      <motion.h2 initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-        Skills
-      </motion.h2>
-
-      <div className="skill-list">
-        {skills.map((skill, index) => (
-          <motion.span
-            key={index}
-            className="skill-tag"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.3, delay: index * 0.05 }}
-          >
-            {skill}
-          </motion.span>
-        ))}
-      </div>
-    </section>
+    <Box id={id} sx={{ py: 8 }}>
+      <Container maxWidth="md">
+        <Typography variant="h3" gutterBottom textAlign="center">
+          Skills
+        </Typography>
+        <Grid container spacing={2}>
+          {skills.map((skill, index) => (
+            <Grid item xs={6} sm={4} md={3} key={index}>
+              <Paper
+                elevation={2}
+                sx={{
+                  p: 2,
+                  textAlign: "center",
+                  transition: "0.3s",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: 4,
+                  },
+                }}
+              >
+                <Typography>{skill}</Typography>
+              </Paper>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
   );
 }
 

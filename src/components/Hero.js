@@ -1,45 +1,74 @@
-// src/components/HeroSection.jsx
 import React from "react";
-import { ParallaxBanner } from "react-scroll-parallax";
-import { motion } from "framer-motion";
-import heroVideo from "../assets/heroVideo.mp4";
+import { Typography, Button, Container, Box } from "@mui/material";
 
-function HeroSection({ personalInfo }) {
+function HeroSection({ id, personalInfo }) {
   const { name, title } = personalInfo || {};
 
+  // Add scroll to contact section handler
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  // Add resume download handler
+  const handleResumeClick = () => {
+    // Add your resume file path here
+    window.open('src/assets/RonzonGonzalo_Resume.pdf','_blank');
+  };
+
   return (
-    <section id="hero" className="hero-section">
-      <ParallaxBanner
-        layers={[
-          {
-            children: (
-              <video className="hero-video" autoPlay muted loop>
-                <source src={heroVideo} type="video/mp4" />
-              </video>
-            ),
-            speed: -20,
-          },
-        ]}
-        className="hero-banner"
-      >
-        <div className="hero-content">
-          <motion.h1
-            initial={{ opacity: 0, y: 60 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+    <Box
+      id={id}
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        background: "linear-gradient(135deg, #1976d2 0%, #21CBF3 100%)",
+        color: "white",
+        pt: 8,
+      }}
+    >
+      <Container maxWidth="md">
+        <Box textAlign="center">
+          <Typography variant="h2" component="h1" gutterBottom>
+            {name}
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            {title}
+          </Typography>
+          <Box
+            sx={{ mt: 4, display: "flex", justifyContent: "center", gap: 2 }}
           >
-            {name || "My Name Here"}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
-          >
-            {title || "My Title"}
-          </motion.p>
-        </div>
-      </ParallaxBanner>
-    </section>
+            {/* Added onClick handler for resume button */}
+            <Button
+              variant="contained"
+              onClick={handleResumeClick}
+              sx={{
+                bgcolor: "white",
+                color: "primary.main",
+                "&:hover": { bgcolor: "grey.100" },
+              }}
+            >
+              View Resume
+            </Button>
+            {/* Added onClick handler for contact button */}
+            <Button
+              variant="outlined"
+              onClick={scrollToContact}
+              sx={{
+                color: "white",
+                borderColor: "white",
+                "&:hover": { borderColor: "grey.100" },
+              }}
+            >
+              Contact Me
+            </Button>
+          </Box>
+        </Box>
+      </Container>
+    </Box>
   );
 }
 

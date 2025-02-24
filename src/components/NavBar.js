@@ -1,137 +1,65 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
-import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  Box,
+  IconButton,
+} from "@mui/material";
 
-function NavBar({ personalInfo, isNightMode, toggleNightMode }) {
-  const [menuOpen, setMenuOpen] = useState(false);
+function NavBar({ isMobile, setMobileOpen, setActiveSection }) {
+  // Scroll handler function
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveSection(sectionId);
+  };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div className="container-fluid">
-        <div className="navbar-brand">GR</div>
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-controls="navbarNav"
-          aria-expanded={menuOpen}
-          aria-label="Toggle navigation"
+    <AppBar position="fixed" color="default" elevation={1}>
+      <Toolbar>
+        {/* Keep existing Typography component */}
+        <Typography
+          variant="h6"
+          sx={{
+            flexGrow: 1,
+            background: "linear-gradient(45deg, #1976d2 30%, #21CBF3 90%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
         >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}
-          id="navbarNav"
-        >
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="hero"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setMenuOpen(false)}
+          GR
+        </Typography>
+        {isMobile ? (
+          <IconButton onClick={() => setMobileOpen(true)}>
+            <i className="fas fa-bars"></i>
+          </IconButton>
+        ) : (
+          <Box sx={{ display: "flex", gap: 2 }}>
+            {[
+              "Home",
+              "About",
+              "Skills",
+              "Experience",
+              "Education",
+              "Contact",
+            ].map((item) => (
+              // Fixed onClick handler
+              <Button
+                key={item}
+                color="inherit"
+                onClick={() => scrollToSection(item.toLowerCase())}
               >
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="summary"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setMenuOpen(false)}
-              >
-                Summary
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setMenuOpen(false)}
-              >
-                Skills
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="experience"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setMenuOpen(false)}
-              >
-                Experience
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setMenuOpen(false)}
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="education"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setMenuOpen(false)}
-              >
-                Education
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="certifications"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setMenuOpen(false)}
-              >
-                Certifications
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setMenuOpen(false)}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+                {item}
+              </Button>
+            ))}
+          </Box>
+        )}
+      </Toolbar>
+    </AppBar>
   );
 }
 
