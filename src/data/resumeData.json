@@ -12,8 +12,9 @@
 
   "summary": [
     "Enthusiastic and adaptable Information Technology and Intelligent Systems Engineer with 5 years of experience in software engineering and project management, specializing in front-end development with React and back-end integration using Django.",
-    "Proficient in agile methodologies, network updates, and software development lifecycles, with a record of delivering efficient platforms and fostering collaborative environments. Highly committed and responsible, I thrive on continuous learning and pragmatic solutions.",
-    "Leveraging my skills as a Full Stack Engineer, I aspire to design, implement, and maintain cutting-edge web applications that help organizations achieve their goals. I succeed in dynamic environments where innovation and teamwork are key."
+    "Proficient in agile methodologies, network updates, and software development lifecycles, with expertise in designing efficient platforms, automating workflows, and enhancing team performance through innovative solutions like Copilot agents and real-time SRT stream monitoring.",
+    "Highly committed and responsible, I foster positive and collaborative environments with exceptional teamwork skills, consistently taking the initiative and pursuing continuous professional and personal growth.",
+    "Leveraging my skills as a Full Stack Engineer, I aspire to design, implement, and maintain cutting-edge web applications that help organizations achieve their goals. I thrive in dynamic environments where innovation and teamwork are key."
   ],
 
   "skills": [
@@ -48,8 +49,12 @@
       "duration": "01/2023 - Present",
       "details": [
         "Design and implement network updates, researching technological solutions and best practices (including real-time SRT stream monitoring).",
+        "Develop Copilot agents to automate workflows and generate summaries, improving operational efficiency.",
         "Manage technical budgets and coordinate with vendors, creating a hub for controlling all IP devices for broadcast networks.",
         "Develop infrastructure solutions, resolving operational issues and enhancing team collaboration.",
+        "Automate reports in Power BI and integrate tools like Jira and Power Apps to streamline workflows.",
+        "Provide expert technical support for tools such as Avid, VPOST, and Latakoo, resolving real-time operational issues.",
+        "Configure audiovisual workflows, monitor signals, and inspect equipment in server rooms and studios.",
         "Maintain strong internal/external relationships and produce comprehensive user manuals."
       ]
     },
@@ -145,7 +150,7 @@
   "about": {
     "description": "I'm a passionate Information Technology and Intelligent Systems Engineer based in CDMX, Mexico. Beyond the code and technical specifications, I'm an innovative thinker who thrives on solving complex problems and creating efficient solutions.",
     "approach": "I believe in the power of continuous learning and staying ahead of technological trends. My adaptable nature and strong communication skills allow me to work effectively in diverse teams and bridge the gap between technical and non-technical stakeholders.",
-    "interests": "When I'm not coding or exploring new technologies, I enjoy contributing to the tech community, mentoring aspiring developers, and staying active through sports and outdoor activities. I'm also passionate about sustainable technology and its impact on our future.",
+    "interests": "When I'm not coding or exploring new technologies, I enjoy staying active through sports, especially football or bowling. I'm passionate about cinema, videogames, pop culture, dancing, solving puzzles, and reading. These hobbies allow me to stay creative, engaged, and balanced in both my personal and professional life.",
     "traits": [
       {
         "title": "Innovative Thinker",
