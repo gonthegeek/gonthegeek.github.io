@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://www.gonzaloronzon.com/",
   "dependencies": {
-    "@emotion/react": "11.11.0",
+    "@emotion/react": "11.14.0",
     "@emotion/styled": "11.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
