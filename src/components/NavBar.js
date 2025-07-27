@@ -44,7 +44,9 @@ function NavBar({ isMobile, setMobileOpen, setActiveSection }) {
               "About",
               "Skills",
               "Experience",
+              "Projects",
               "Education",
+              "Resume",
               "Contact",
             ].map((item) => (
               // Fixed onClick handler

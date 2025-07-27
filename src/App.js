@@ -5,10 +5,13 @@ import HeroSection from "./components/Hero";
 import AboutSection from "./components/About";
 import SkillsSection from "./components/Skills";
 import ExperienceSection from "./components/Experience";
+import ProjectsSection from "./components/Projects";
 import EducationSection from "./components/Education";
 import CertificationsSection from "./components/Certifications";
+import ResumeDownloadSection from "./components/ResumeDownload";
 import ContactSection from "./components/Contact";
 import resumeData from "./data/resumeData.json";
+import projectsData from "./data/projectsData.json";
 import {
   Box,
   Drawer,
@@ -28,6 +31,8 @@ function App() {
     education,
     certifications,
   } = resumeData;
+
+  const { personalProjects, professionalProjects } = projectsData;
 
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -53,7 +58,9 @@ function App() {
               "About",
               "Skills",
               "Experience",
+              "Projects",
               "Education",
+              "Resume",
               "Contact",
             ].map((text) => (
               <ListItem
@@ -73,10 +80,14 @@ function App() {
         <AboutSection id="about" summary={summary} />
         <SkillsSection id="skills" skills={skills} />
         <ExperienceSection id="experience" experience={experience} />
-        {/*         <ProjectsSection projects={projects} />
-         */}
+        <ProjectsSection 
+          id="projects" 
+          personalProjects={personalProjects} 
+          professionalProjects={professionalProjects} 
+        />
         <CertificationsSection certifications={certifications} />
         <EducationSection id="education" education={education} />
+        <ResumeDownloadSection id="resume" personalInfo={personalInfo} />
         <ContactSection id="contact" personalInfo={personalInfo} />
         {/* <Footer /> */}
       </CssBaseline>

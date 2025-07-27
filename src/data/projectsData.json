@@ -1,0 +1,300 @@
+{
+  "personalProjects": [
+    {
+      "id": "wedding-invitation-platform",
+      "name": "Wedding Invitation Platform",
+      "description": "A modern web platform for creating and managing digital wedding invitations with Firebase backend integration. Features real-time RSVP management, guest list tracking, and responsive design.",
+      "technologies": ["JavaScript", "Firebase", "HTML/CSS", "Responsive Design"],
+      "category": "Full-Stack Web Development",
+      "type": "personal",
+      "githubUrl": "https://github.com/gonthegeek/wedding-invitation-platform",
+      "liveUrl": null,
+      "features": [
+        "Real-time RSVP management",
+        "Guest list tracking",
+        "Responsive design",
+        "Firebase integration"
+      ],
+      "highlights": "Demonstrates full-stack development skills with real-time data management"
+    },
+    {
+      "id": "flutter-tiktok-clone",
+      "name": "TikTok Clone (Flutter)",
+      "description": "Mobile application clone of TikTok built with Flutter, featuring video playback, user interactions, and modern UI/UX patterns. Showcases cross-platform mobile development expertise.",
+      "technologies": ["Flutter", "Dart", "Mobile Development", "UI/UX Design"],
+      "category": "Mobile Development",
+      "type": "personal",
+      "githubUrl": "https://github.com/gonthegeek/flutter_tiktok",
+      "liveUrl": null,
+      "features": [
+        "Video playback and streaming",
+        "User interaction system",
+        "Modern UI/UX design",
+        "Cross-platform compatibility"
+      ],
+      "highlights": "Demonstrates mobile development skills and UI/UX design capabilities"
+    },
+    {
+      "id": "chatbot-up",
+      "name": "ChatBot UP",
+      "description": "Intelligent chatbot application with both frontend and backend implementations. Features natural language processing and API integration for enhanced user interactions.",
+      "technologies": ["JavaScript", "Node.js", "API Integration", "NLP"],
+      "category": "AI/ML Integration",
+      "type": "personal",
+      "githubUrl": "https://github.com/gonthegeek/ChatBotUP",
+      "liveUrl": null,
+      "features": [
+        "Natural language processing",
+        "REST API integration",
+        "Frontend and backend implementation",
+        "Intelligent response system"
+      ],
+      "highlights": "Shows AI integration skills and full-stack development capabilities"
+    },
+    {
+      "id": "compilador-pascal",
+      "name": "Pascal to C Compiler",
+      "description": "Academic project implementing a compiler that translates Pascal code to C. Features lexical analysis, syntax parsing, and code generation with comprehensive error handling.",
+      "technologies": ["C", "Flex", "Bison", "Compiler Design", "Data Structures"],
+      "category": "Systems Programming",
+      "type": "academic",
+      "githubUrl": "https://github.com/gonthegeek/Compilador_Pascal_a_C",
+      "liveUrl": null,
+      "features": [
+        "Lexical analysis with Flex",
+        "Syntax parsing with Bison",
+        "Symbol table management",
+        "Error detection and reporting"
+      ],
+      "highlights": "Demonstrates deep understanding of computer science fundamentals and systems programming"
+    },
+    {
+      "id": "covid-patterns-analysis",
+      "name": "COVID-19 Patterns Analysis (CDMX)",
+      "description": "Data science project analyzing COVID-19 patterns in Mexico City before vaccination campaigns. Features comprehensive data visualization and statistical analysis using Jupyter notebooks.",
+      "technologies": ["Python", "Jupyter", "Data Analysis", "Visualization", "Pandas"],
+      "category": "Data Science",
+      "type": "academic",
+      "githubUrl": "https://github.com/gonthegeek/Patrones_COVID_prevacuna_CDMX",
+      "liveUrl": null,
+      "features": [
+        "Statistical data analysis",
+        "Interactive visualizations",
+        "Pattern recognition",
+        "Comprehensive reporting"
+      ],
+      "highlights": "Shows data science skills and ability to extract insights from complex datasets"
+    },
+    {
+      "id": "itunes-search-v2",
+      "name": "iTunes Search Application v2",
+      "description": "Modern web application for searching iTunes content with enhanced user interface and improved search functionality. Built with modern JavaScript frameworks and responsive design.",
+      "technologies": ["JavaScript", "API Integration", "Responsive Design", "Modern Web"],
+      "category": "Frontend Development",
+      "type": "personal",
+      "githubUrl": "https://github.com/gonthegeek/itunessearchv2",
+      "liveUrl": null,
+      "features": [
+        "iTunes API integration",
+        "Advanced search functionality",
+        "Responsive user interface",
+        "Modern JavaScript implementation"
+      ],
+      "highlights": "Demonstrates API integration skills and modern frontend development practices"
+    },
+    {
+      "id": "learning-journal",
+      "name": "Learning Journal Platform",
+      "description": "Personal learning management platform with Firebase hosting and build automation. Features content management and progress tracking for continuous learning documentation.",
+      "technologies": ["Firebase", "Build Automation", "Content Management", "Web Development"],
+      "category": "Learning & Documentation",
+      "type": "personal",
+      "githubUrl": "https://github.com/gonthegeek/LearningJournal",
+      "liveUrl": null,
+      "features": [
+        "Content management system",
+        "Progress tracking",
+        "Automated deployment",
+        "Firebase integration"
+      ],
+      "highlights": "Shows commitment to continuous learning and documentation practices"
+    },
+    {
+      "id": "workflow-tools",
+      "name": "Workflow Automation Tools",
+      "description": "Collection of automation tools and scripts designed to streamline development workflows and improve productivity. Features various utility scripts and automation helpers.",
+      "technologies": ["Automation", "Scripting", "DevOps", "Productivity Tools"],
+      "category": "DevOps & Automation",
+      "type": "personal",
+      "githubUrl": "https://github.com/gonthegeek/workflow-tools",
+      "liveUrl": null,
+      "features": [
+        "Development workflow automation",
+        "Productivity enhancement tools",
+        "Reusable script collection",
+        "Process optimization"
+      ],
+      "highlights": "Demonstrates automation skills and focus on developer productivity"
+    },
+    {
+      "id": "melate-retro-analyzer",
+      "name": "Melate Retro Statistical Analyzer",
+      "description": "Advanced statistical analysis system for Melate Retro lottery with automated data collection, pattern recognition, and AI-powered predictions. Features complete automation with GitHub Actions and Firebase integration.",
+      "technologies": ["Python", "Firebase", "GitHub Actions", "Data Analysis", "Web Scraping", "Statistics"],
+      "category": "Data Science & AI",
+      "type": "personal",
+      "githubUrl": "https://github.com/gonthegeek/MelateRetro",
+      "liveUrl": null,
+      "features": [
+        "Automated web scraping for lottery results",
+        "Statistical pattern analysis",
+        "3.2M combination brute force analysis",
+        "Firebase real-time database integration",
+        "Automated CI/CD pipeline",
+        "Interactive web dashboard"
+      ],
+      "highlights": "Sophisticated data analysis system with complete automation and AI-powered insights"
+    },
+    {
+      "id": "ventas-pronosticos",
+      "name": "Vending Machine Sales Tracker",
+      "description": "Comprehensive sales tracking and analytics platform for vending machines with real-time data visualization, trend analysis, and collaborative features. Built with Firebase for scalable data management.",
+      "technologies": ["JavaScript", "Firebase", "Chart.js", "TailwindCSS", "Real-time Database"],
+      "category": "Business Intelligence",
+      "type": "personal",
+      "githubUrl": "https://github.com/gonthegeek/ventas-Pronosticos",
+      "liveUrl": null,
+      "features": [
+        "Real-time sales data registration",
+        "Automated calculations and trends",
+        "Interactive charts and visualizations",
+        "Collaborative multi-user environment",
+        "CSV data import functionality",
+        "Advanced filtering and comparison tools"
+      ],
+      "highlights": "Production-ready business intelligence tool with real-time collaboration features"
+    },
+    {
+      "id": "nutricion-app",
+      "name": "Nutrition Tracking Application",
+      "description": "Web-based nutrition tracking application with Firebase backend for monitoring dietary intake, nutritional analysis, and health metrics. Features responsive design and real-time data synchronization.",
+      "technologies": ["Firebase", "JavaScript", "Web Development", "Health Tech"],
+      "category": "Health Technology",
+      "type": "personal",
+      "githubUrl": "https://github.com/gonthegeek/nutricion",
+      "liveUrl": null,
+      "features": [
+        "Nutritional intake tracking",
+        "Health metrics monitoring",
+        "Firebase real-time synchronization",
+        "Responsive web design",
+        "User authentication system"
+      ],
+      "highlights": "Health-focused application demonstrating Firebase integration and responsive design"
+    }
+  ],
+  "professionalProjects": [
+    {
+      "id": "nbc-srt-monitoring",
+      "name": "Real-time SRT Stream Monitoring System",
+      "description": "Enterprise-grade web application for monitoring SRT (Secure Reliable Transport) streams in real-time for broadcast operations. Significantly improved broadcast reliability and uptime.",
+      "technologies": ["React", "WebRTC", "Real-time Monitoring", "Broadcast Technology"],
+      "category": "Enterprise Web Development",
+      "type": "professional",
+      "company": "NBCUniversal",
+      "features": [
+        "Real-time stream monitoring",
+        "Broadcast reliability tracking",
+        "Alert system integration",
+        "Performance analytics dashboard"
+      ],
+      "highlights": "Critical system for live broadcast operations",
+      "confidential": true
+    },
+    {
+      "id": "nbc-copilot-agents",
+      "name": "Workflow Automation Copilot Agents",
+      "description": "AI-powered automation agents that streamline workflows and generate automated summaries, enhancing operational efficiency across multiple departments.",
+      "technologies": ["AI Integration", "Workflow Automation", "Process Optimization"],
+      "category": "AI/Automation",
+      "type": "professional",
+      "company": "NBCUniversal",
+      "features": [
+        "Automated workflow management",
+        "Intelligent summary generation",
+        "Cross-departmental integration",
+        "Efficiency metrics tracking"
+      ],
+      "highlights": "Improved operational efficiency across departments",
+      "confidential": true
+    },
+    {
+      "id": "nbc-ip-control-hub",
+      "name": "Centralized IP Device Control Hub",
+      "description": "Comprehensive platform for controlling all IP devices used in broadcast shows, streamlining technical operations during live productions.",
+      "technologies": ["Network Management", "Device Control", "Broadcast Systems"],
+      "category": "Network & Systems",
+      "type": "professional",
+      "company": "NBCUniversal",
+      "features": [
+        "Centralized device management",
+        "Live production support",
+        "Technical operations dashboard",
+        "Real-time device monitoring"
+      ],
+      "highlights": "Streamlined live production technical operations",
+      "confidential": true
+    },
+    {
+      "id": "nbc-power-bi-integration",
+      "name": "Power BI Reporting System with Jira Integration",
+      "description": "Automated reporting system integrating Power BI with Jira and Power Apps for improved KPI tracking and data-driven decision making.",
+      "technologies": ["Power BI", "Jira API", "Power Apps", "Data Analytics"],
+      "category": "Business Intelligence",
+      "type": "professional",
+      "company": "NBCUniversal",
+      "features": [
+        "Automated KPI reporting",
+        "Jira integration",
+        "Power Apps workflow",
+        "Real-time analytics"
+      ],
+      "highlights": "Enabled data-driven decision making across teams",
+      "confidential": true
+    },
+    {
+      "id": "kamino-react-applications",
+      "name": "Enterprise React Applications Suite",
+      "description": "Led development of multiple React applications with comprehensive testing coverage, translating complex UI designs into seamless user experiences.",
+      "technologies": ["React", "JavaScript", "UI/UX", "Testing", "Django"],
+      "category": "Frontend Development",
+      "type": "professional",
+      "company": "KaminoTech",
+      "features": [
+        "Complex UI implementation",
+        "Comprehensive test coverage",
+        "Performance optimization",
+        "Django backend integration"
+      ],
+      "highlights": "Enhanced user engagement through seamless design implementation",
+      "confidential": true
+    },
+    {
+      "id": "up-digital-transformation",
+      "name": "University Digital Transformation Project",
+      "description": "Led a team of 5 interns in a digital transformation project that was successfully adopted by 3 departments university-wide, showcasing leadership and project management skills.",
+      "technologies": ["Angular", "Project Management", "Digital Transformation"],
+      "category": "Leadership & Management",
+      "type": "professional",
+      "company": "Universidad Panamericana",
+      "features": [
+        "Team leadership (5 members)",
+        "Angular web development",
+        "Cross-departmental implementation",
+        "Change management"
+      ],
+      "highlights": "University-wide adoption across 3 departments",
+      "confidential": false
+    }
+  ]
+}
