@@ -7,6 +7,7 @@ import {
   Box,
   IconButton,
 } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function NavBar({ isMobile, setMobileOpen }) {
   // Scroll handler function
@@ -33,8 +34,24 @@ function NavBar({ isMobile, setMobileOpen }) {
           GR
         </Typography>
         {isMobile ? (
-          <IconButton onClick={() => setMobileOpen(true)}>
-            <i className="fas fa-bars"></i>
+          <IconButton 
+            onClick={() => setMobileOpen(true)}
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            sx={{ 
+              display: { xs: 'flex', md: 'none' },
+              color: 'text.primary',
+              '&:hover': {
+                backgroundColor: 'rgba(0, 0, 0, 0.04)'
+              },
+              '& .MuiSvgIcon-root': {
+                fontSize: '1.8rem',
+                color: 'text.primary'
+              }
+            }}
+          >
+            <MenuIcon />
           </IconButton>
         ) : (
           <Box sx={{ display: "flex", gap: 2 }}>

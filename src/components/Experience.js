@@ -73,14 +73,15 @@ function ExperienceSection({ id, experience }) {
                     mx: isMobile ? 0 : 'auto'
                   }}
                 >
-                  <CardContent sx={{ p: isMobile ? 2 : 3 }}>
+                  <CardContent sx={{ p: isMobile ? 2 : 3, textAlign: 'left' }}>
                     <Typography 
                       variant={isMobile ? "subtitle1" : "h6"} 
                       color="primary"
                       sx={{ 
                         fontWeight: 'bold',
                         mb: 0.5,
-                        fontSize: isMobile ? '1rem' : '1.25rem'
+                        fontSize: isMobile ? '1rem' : '1.25rem',
+                        textAlign: 'left'
                       }}
                     >
                       {exp.role}
@@ -90,7 +91,8 @@ function ExperienceSection({ id, experience }) {
                       sx={{ 
                         fontWeight: 'medium',
                         mb: 0.5,
-                        fontSize: isMobile ? '0.9rem' : '1rem'
+                        fontSize: isMobile ? '0.9rem' : '1rem',
+                        textAlign: 'left'
                       }}
                     >
                       {exp.company}
@@ -100,7 +102,8 @@ function ExperienceSection({ id, experience }) {
                       color="text.secondary"
                       sx={{ 
                         mb: 2,
-                        fontSize: isMobile ? '0.8rem' : '0.875rem'
+                        fontSize: isMobile ? '0.8rem' : '0.875rem',
+                        textAlign: 'left'
                       }}
                     >
                       {exp.duration}
@@ -111,10 +114,12 @@ function ExperienceSection({ id, experience }) {
                         mt: 1,
                         pl: isMobile ? 2 : 2.5,
                         m: 0,
+                        textAlign: 'left',
                         '& li': {
                           mb: 0.5,
                           fontSize: isMobile ? '0.85rem' : '0.9rem',
-                          lineHeight: 1.4
+                          lineHeight: 1.4,
+                          textAlign: 'left'
                         }
                       }}
                     >
@@ -125,7 +130,8 @@ function ExperienceSection({ id, experience }) {
                           sx={{
                             fontSize: isMobile ? '0.85rem' : '0.9rem',
                             lineHeight: 1.4,
-                            mb: 0.5
+                            mb: 0.5,
+                            textAlign: 'left'
                           }}
                         >
                           {detail}
