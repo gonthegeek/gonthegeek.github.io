@@ -35,7 +35,6 @@ function App() {
   const { personalProjects, professionalProjects } = projectsData;
 
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -45,7 +44,6 @@ function App() {
         <NavBar
           isMobile={isMobile}
           setMobileOpen={setMobileOpen}
-          setActiveSection={setActiveSection}
         />
         <Drawer
           anchor="right"
@@ -67,7 +65,10 @@ function App() {
                 button
                 key={text}
                 onClick={() => {
-                  setActiveSection(text.toLowerCase());
+                  const element = document.getElementById(text.toLowerCase());
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
                   setMobileOpen(false);
                 }}
               >

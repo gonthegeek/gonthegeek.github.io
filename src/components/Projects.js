@@ -17,7 +17,6 @@ import {
   ListItem,
   ListItemText,
   useTheme,
-  useMediaQuery,
 } from "@mui/material";
 import {
   GitHub as GitHubIcon,
@@ -33,7 +32,6 @@ function ProjectsSection({ personalProjects, professionalProjects }) {
   const [selectedTab, setSelectedTab] = useState(0);
   const [expandedProject, setExpandedProject] = useState(null);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const handleTabChange = (event, newValue) => {
     setSelectedTab(newValue);

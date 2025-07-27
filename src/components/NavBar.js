@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   AppBar,
   Toolbar,
@@ -8,14 +8,13 @@ import {
   IconButton,
 } from "@mui/material";
 
-function NavBar({ isMobile, setMobileOpen, setActiveSection }) {
+function NavBar({ isMobile, setMobileOpen }) {
   // Scroll handler function
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-    setActiveSection(sectionId);
   };
 
   return (

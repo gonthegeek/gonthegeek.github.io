@@ -10,10 +10,7 @@ import {
   Tabs,
   LinearProgress,
   Card,
-  CardContent,
-  Avatar,
-  IconButton,
-  Tooltip
+  CardContent
 } from "@mui/material";
 import { motion } from "framer-motion";
 import {
@@ -21,8 +18,6 @@ import {
   Storage as DatabaseIcon,
   Cloud as CloudIcon,
   Devices as DevicesIcon,
-  School as CertificationIcon,
-  Work as ProfessionalIcon,
   Star as StarIcon,
   TrendingUp as TrendingIcon,
 } from "@mui/icons-material";
