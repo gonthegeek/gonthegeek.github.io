@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-function NavBar({ isMobile, setMobileOpen }) {
+function Navigation({ isMobile, setMobileOpen }) {
   // Scroll handler function
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -81,4 +81,4 @@ function NavBar({ isMobile, setMobileOpen }) {
   );
 }
 
-export default NavBar;
+export default Navigation;

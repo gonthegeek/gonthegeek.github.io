@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import NavBar from "./components/NavBar";
+import Navigation from "./components/Navigation";
 import HeroSection from "./components/Hero";
 import AboutSection from "./components/About";
 import SkillsSection from "./components/Skills";
@@ -41,7 +41,7 @@ function App() {
   return (
     <Box sx={{ bgcolor: "background.default" }}>
       <CssBaseline>
-        <NavBar
+        <Navigation
           isMobile={isMobile}
           setMobileOpen={setMobileOpen}
         />
