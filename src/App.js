@@ -41,10 +41,7 @@ function App() {
   return (
     <Box sx={{ bgcolor: "background.default" }}>
       <CssBaseline>
-        <Navigation
-          isMobile={isMobile}
-          setMobileOpen={setMobileOpen}
-        />
+        <Navigation isMobile={isMobile} setMobileOpen={setMobileOpen} />
         <Drawer
           anchor="right"
           open={mobileOpen}
@@ -58,7 +55,6 @@ function App() {
               "Experience",
               "Projects",
               "Education",
-              "Resume",
               "Contact",
             ].map((text) => (
               <ListItem
@@ -79,18 +75,17 @@ function App() {
         </Drawer>
         <HeroSection id="home" personalInfo={personalInfo} />
         <AboutSection id="about" summary={summary} />
-        <SkillsSection id="skills" skills={skills} />
         <ExperienceSection id="experience" experience={experience} />
-        <ProjectsSection 
-          id="projects" 
-          personalProjects={personalProjects} 
-          professionalProjects={professionalProjects} 
+        <SkillsSection id="skills" skills={skills} />
+        <ProjectsSection
+          id="projects"
+          personalProjects={personalProjects}
+          professionalProjects={professionalProjects}
         />
         <CertificationsSection certifications={certifications} />
         <EducationSection id="education" education={education} />
         <ResumeDownloadSection id="resume" personalInfo={personalInfo} />
         <ContactSection id="contact" personalInfo={personalInfo} />
-        {/* <Footer /> */}
       </CssBaseline>
     </Box>
   );

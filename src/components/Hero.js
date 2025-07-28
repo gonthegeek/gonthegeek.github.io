@@ -30,12 +30,14 @@ function HeroSection({ id, personalInfo }) {
     }
   };
 
-  // Add scroll to resume section handler
-  const scrollToResume = () => {
-    const resumeSection = document.getElementById('resume');
-    if (resumeSection) {
-      resumeSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  // Add download resume handler
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/Gonzalo Ronzon - Resume.pdf'; // PDF stored in public folder
+    link.download = 'Gonzalo_Ronzon_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const highlights = [
@@ -188,7 +190,7 @@ function HeroSection({ id, personalInfo }) {
                     <Button
                       variant="contained"
                       size="large"
-                      onClick={scrollToResume}
+                      onClick={handleDownloadResume}
                       startIcon={<DownloadIcon />}
                       sx={{
                         bgcolor: "white",
