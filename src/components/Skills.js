@@ -31,26 +31,26 @@ function SkillsSection({ id, skills }) {
       icon: <CodeIcon />,
       color: "#1976d2",
       skills: [
-        { name: "React", level: 95, years: "3+", description: "Advanced component architecture, hooks, context" },
-        { name: "Angular", level: 85, years: "2+", description: "Enterprise applications, TypeScript integration" },
-        { name: "JavaScript (ES6+)", level: 95, years: "5+", description: "Modern JavaScript, async/await, modules" },
-        { name: "TypeScript", level: 90, years: "2+", description: "Type safety, interfaces, generics" },
-        { name: "HTML5/CSS3", level: 90, years: "5+", description: "Semantic markup, flexbox, grid, animations" },
-        { name: "Material-UI", level: 85, years: "2+", description: "Component customization, theming" }
+        { name: "React", level: 95, years: "3+", description: "Enterprise-grade TypeScript apps, complex state management, hooks, context" },
+        { name: "JavaScript (ES6+)", level: 90, years: "5+", description: "Modern JavaScript, async/await, modules, advanced patterns" },
+        { name: "TypeScript", level: 90, years: "3+", description: "Complex type systems, enterprise apps, strict mode, full-stack development" },
+        { name: "Angular", level: 70, years: "3+", description: "Enterprise applications, university projects" },
+        { name: "HTML5/CSS3", level: 85, years: "5+", description: "Semantic markup, flexbox, grid, responsive design" },
+        { name: "Flutter", level: 85, years: "1+", description: "Complex mobile apps, Firebase integration, cross-platform, state management" }
       ]
     },
     backend: {
-      name: "Backend Development",
+      name: "Backend & APIs",
       icon: <DatabaseIcon />,
       color: "#388e3c",
       skills: [
-        { name: "Django", level: 90, years: "3+", description: "REST APIs, ORM, authentication" },
-        { name: "Node.js", level: 85, years: "2+", description: "Express.js, API development" },
-        { name: "Python", level: 95, years: "5+", description: "Data processing, automation, web development" },
-        { name: "Java", level: 80, years: "2+", description: "Object-oriented programming, Spring basics" },
-        { name: "PHP", level: 75, years: "1+", description: "Web development, basic frameworks" },
-        { name: "PostgreSQL", level: 85, years: "3+", description: "Complex queries, database design" },
-        { name: "MongoDB", level: 80, years: "2+", description: "Document databases, aggregation" }
+        { name: "Python", level: 95, years: "5+", description: "FastAPI, automation, data processing, web scraping" },
+        { name: "Node.js", level: 90, years: "3+", description: "Firebase Functions, complex backend logic, Express.js, WebRTC platforms" },
+        { name: "FastAPI", level: 90, years: "2+", description: "Microservices, health checks, real-time APIs, teaching others" },
+        { name: "Django", level: 75, years: "2+", description: "REST APIs, ORM, authentication" },
+        { name: "Socket Programming", level: 85, years: "2+", description: "Real-time communication, audio patching automation" },
+        { name: "PostgreSQL", level: 80, years: "3+", description: "Complex queries, TimescaleDB, database design" },
+        { name: "Redis", level: 75, years: "2+", description: "Caching, real-time analytics, session storage" }
       ]
     },
     cloud: {
@@ -58,29 +58,42 @@ function SkillsSection({ id, skills }) {
       icon: <CloudIcon />,
       color: "#f57c00",
       skills: [
-        { name: "Microsoft Azure", level: 85, years: "2+", description: "AZ-900 certified, cloud architecture" },
-        { name: "Power Platform", level: 90, years: "2+", description: "Power BI, Power Apps, automation" },
-        { name: "Firebase", level: 80, years: "1+", description: "Hosting, real-time database" },
-        { name: "Git/GitHub", level: 90, years: "5+", description: "Version control, collaboration" },
-        { name: "Docker", level: 70, years: "1+", description: "Containerization basics" }
+        { name: "Docker", level: 85, years: "2+", description: "Containerization, Docker Compose, microservices orchestration" },
+        { name: "GitHub Actions", level: 80, years: "2+", description: "CI/CD pipelines, automated deployments, testing" },
+        { name: "Microsoft Azure", level: 75, years: "2+", description: "AZ-900 certified, cloud architecture" },
+        { name: "Power Platform", level: 95, years: "2+", description: "Power BI, Power Apps, Power Automate, Copilot Studio" },
+        { name: "Firebase", level: 85, years: "2+", description: "Full-stack apps, authentication, Firestore, Functions, real-time systems" },
+        { name: "Linux", level: 80, years: "3+", description: "Server management, system administration" },
+        { name: "Prometheus & Grafana", level: 70, years: "1+", description: "Monitoring, metrics collection, dashboards" }
       ]
     },
     broadcast: {
-      name: "Broadcast Technology",
+      name: "Broadcast & Automation",
       icon: <DevicesIcon />,
       color: "#7b1fa2",
       skills: [
-        { name: "SRT Streaming", level: 90, years: "2+", description: "Real-time monitoring, broadcast reliability" },
-        { name: "Avid Systems", level: 85, years: "2+", description: "Professional broadcast workflows" },
-        { name: "VPOST", level: 85, years: "2+", description: "Video production operations" },
-        { name: "Latakoo", level: 80, years: "2+", description: "File transfer and collaboration" },
-        { name: "WebRTC", level: 75, years: "1+", description: "Real-time communication" },
-        { name: "Network Management", level: 85, years: "3+", description: "IP device control, monitoring" }
+        { name: "WebRTC", level: 85, years: "2+", description: "mediasoup integration, real-time streaming, broadcast platforms" },
+        { name: "Broadcast Systems", level: 95, years: "3+", description: "Live production, audio systems, network infrastructure, teaching" },
+        { name: "Playwright", level: 85, years: "2+", description: "Web automation, audio patching systems, testing" },
+        { name: "Network Infrastructure", level: 90, years: "3+", description: "CCNA certified, IP device control, monitoring" },
+        { name: "Audio Systems", level: 90, years: "2+", description: "Professional audio, patching automation, live sports" },
+        { name: "Copilot Studio", level: 90, years: "1+", description: "AI agents, document processing, workflow automation" }
+      ]
+    },
+    tools: {
+      name: "Development Tools",
+      icon: <StarIcon />,
+      color: "#d32f2f",
+      skills: [
+        { name: "Git/GitHub", level: 90, years: "5+", description: "Version control, collaboration, advanced workflows" },
+        { name: "Jest", level: 75, years: "2+", description: "Unit testing, integration testing, TDD" },
+        { name: "Electron", level: 80, years: "2+", description: "Cross-platform desktop applications, broadcast tools" },
+        { name: "Yarn", level: 75, years: "2+", description: "Package management, monorepo workflows" },
+        { name: "Black & Prettier", level: 80, years: "2+", description: "Code formatting, quality enforcement" },
+        { name: "SQLAlchemy", level: 75, years: "2+", description: "ORM, database modeling, migrations" }
       ]
     }
-  };
-
-  const categories = Object.keys(skillCategories);
+  };  const categories = Object.keys(skillCategories);
 
   const handleCategoryChange = (event, newValue) => {
     setSelectedCategory(newValue);
@@ -263,13 +276,15 @@ function SkillsSection({ id, skills }) {
             </Box>
             <Typography variant="body1" sx={{ opacity: 0.9 }}>
               {currentCategory.name === "Frontend Development" && 
-                "Creating intuitive user interfaces with modern frameworks and best practices"}
-              {currentCategory.name === "Backend Development" && 
-                "Building robust server-side applications and APIs with scalable architectures"}
+                "Creating intuitive user interfaces with modern frameworks and responsive design"}
+              {currentCategory.name === "Backend & APIs" && 
+                "Building robust server-side applications, APIs, and microservices architectures"}
               {currentCategory.name === "Cloud & DevOps" && 
-                "Leveraging cloud platforms and automation tools for efficient deployment"}
-              {currentCategory.name === "Broadcast Technology" && 
-                "Specialized expertise in professional broadcasting and real-time streaming systems"}
+                "Leveraging cloud platforms, containerization, and automation for scalable deployments"}
+              {currentCategory.name === "Broadcast & Automation" && 
+                "Specialized expertise in broadcast systems, real-time streaming, and production automation"}
+              {currentCategory.name === "Development Tools" && 
+                "Professional development workflow with modern tooling and best practices"}
             </Typography>
           </Box>
 
@@ -299,8 +314,9 @@ function SkillsSection({ id, skills }) {
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ maxWidth: "600px", mx: "auto" }}>
               Technology evolves rapidly, and I'm committed to continuous learning. 
-              Currently exploring AI/ML integration, advanced cloud architectures, 
-              and emerging web technologies to stay at the forefront of innovation.
+              Currently exploring advanced AI/ML integration with Copilot Studio, 
+              microservices architecture patterns, and emerging broadcast technologies 
+              to stay at the forefront of innovation while mentoring teams in modern development practices.
             </Typography>
           </Paper>
         </Box>

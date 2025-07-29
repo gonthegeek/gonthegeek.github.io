@@ -22,24 +22,80 @@
     "Agile",
     "Angular",
     "Azure",
+    "Black",
     "CCNA",
+    "Celery",
+    "Chokidar",
+    "CI/CD",
+    "Concurrently",
+    "Copilot Studio",
+    "CORS",
+    "CSS3",
     "Django",
+    "Docker",
+    "Docker Compose",
+    "dotenv",
+    "Electron",
     "ES6",
+    "Excel Automation",
+    "Express",
+    "FastAPI",
+    "Firebase",
+    "Flutter",
+    "GitHub Actions",
+    "Grafana",
+    "HTML5",
+    "Inquirer",
+    "Isort",
     "Java",
     "JavaScript",
+    "Jest",
+    "Jira API",
     "Kotlin",
+    "Linux",
     "Matlab",
+    "mediasoup",
+    "MkDocs",
+    "Monday.com",
     "MongoDB",
+    "Network Infrastructure",
     "NodeJS",
+    "Outlook",
+    "PDF Parsing",
     "Php",
-    "Power Platform",
-    "Python",
-    "Scrum",
+    "Playwright",
     "PostgreSQL",
+    "Power Apps",
+    "Power Automate",
+    "Power BI",
+    "Power Platform",
+    "PowerShell",
+    "Pre-commit",
+    "Prettier",
+    "Prometheus",
+    "Pydantic",
+    "Pytest",
+    "Python",
+    "React",
+    "Redis",
+    "REST APIs",
+    "Scrum",
+    "ServiceNow",
+    "Slack",
+    "Socket Programming",
+    "SQLAlchemy",
+    "Teams",
+    "TimescaleDB",
     "TypeScript",
+    "Uvicorn",
     "Visio",
+    "Vite",
+    "Viva Engage",
     "WebRTC",
-    "Websockets"
+    "Websockets",
+    "Windows Server",
+    "Yarn",
+    "zx"
   ],
 
   "experience": [
@@ -48,20 +104,24 @@
       "role": "Engineer",
       "duration": "01/2023 - Present",
       "details": [
-        "Design and implement network updates, researching technological solutions and best practices (including real-time SRT stream monitoring).",
-        "Develop Copilot agents to automate workflows and generate summaries, improving operational efficiency.",
-        "Manage technical budgets and coordinate with vendors, creating a hub for controlling all IP devices for broadcast networks.",
-        "Develop infrastructure solutions, resolving operational issues and enhancing team collaboration.",
-        "Automate reports in Power BI and integrate tools like Jira and Power Apps to streamline workflows.",
-        "Provide expert technical support for tools such as Avid, VPOST, and Latakoo, resolving real-time operational issues.",
-        "Configure audiovisual workflows, monitor signals, and inspect equipment in server rooms and studios.",
-        "Maintain strong internal/external relationships and produce comprehensive user manuals."
+        "Design and implement network infrastructure updates, researching technological solutions and best practices for broadcast operations.",
+        "Develop AI-powered automation agents using Copilot Studio to streamline workflows, generate executive summaries, and improve operational efficiency across departments.",
+        "Create and maintain enterprise Power Apps for ticketing, notifications, and KPI tracking, reducing manual processes by up to 60%.",
+        "Build and deploy microservices monitoring platforms using Python, FastAPI, Docker, and PostgreSQL, serving as a teaching template to upskill production engineers in software development capabilities.",
+        "Lead technical mentoring initiatives, creating beginner-friendly documentation and hands-on training to transition production engineers from non-coding backgrounds to developing automation solutions.",
+        "Develop broadcast automation platforms with Node.js, TypeScript, and WebRTC for device control and media streaming integration.",
+        "Implement audio patching automation servers with Python and web interface automation, achieving consistent 1.7-second operation times.",
+        "Function as technical producer for live sports coverage, coordinating with Premier League production teams and managing communication with commentators and talent in audio booths for soccer match narrations.",
+        "Deploy and standardize broadcast infrastructure for live sports coverage, improving setup efficiency by 40% through documentation and kit standardization.",
+        "Manage CI/CD workflows, technical budgets, and vendor coordination while maintaining comprehensive technical documentation and user manuals.",
+        "Provide expert technical support for broadcast tools and systems, resolving real-time operational issues and enhancing team collaboration.",
+        "Configure audiovisual workflows, monitor signals, and maintain equipment in server rooms and studios for optimal broadcast performance."
       ]
     },
     {
-      "company": "KaminoTech",
+      "company": "KaminoiTech",
       "role": "Lead Software Engineer",
-      "duration": "01/2022 - 12/2022",
+      "duration": "05/2021 - 12/2022",
       "details": [
         "Led seamless React application integrations with extensive unit and integration testing.",
         "Resolved software issues and developed intuitive user interfaces (UI) using Adobe XD.",
@@ -87,14 +147,6 @@
         "Produced multimedia products via Adobe Creative Suite for educational projects.",
         "Showcased leadership in digital design for online courses and project management."
       ]
-    }
-  ],
-
-  "projects": [
-    {
-      "name": "No Dedicated Projects Listed",
-      "description": "The resume does not contain stand-alone projects beyond professional responsibilities.",
-      "url": null
     }
   ],
 
@@ -137,14 +189,6 @@
       "issuer": "Audinate",
       "date": "2020",
       "credentialUrl": null
-    }
-  ],
-
-  "openSource": [
-    {
-      "name": "None Listed",
-      "description": "No open source contributions were mentioned in the resume.",
-      "url": null
     }
   ],
   "about": {
